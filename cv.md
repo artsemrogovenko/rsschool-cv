@@ -12,7 +12,7 @@
 * Advanced: _Java, Spring_
 ***
 #### Code example
-```javascript
+```
 function validateQuantity(input, cel_id) {
     var cell = document.getElementById(cel_id);
 
