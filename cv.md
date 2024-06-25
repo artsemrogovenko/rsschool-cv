@@ -7,12 +7,14 @@
 
 #### About me
 >I like to learn something new. The work done brings me joy if it is useful to people or the result can be assessed by functionality. I like to work if the requirements are known in advance. Sometimes I can learn through the process.
+
 #### Knowledges
 * Basic: _HTML,JS,Python,C#,Linux,Docker,Git,SQL_
 * Advanced: _Java, Spring_
-***
+
+
 #### Code example
-```
+```javascript
 function validateQuantity(input, cel_id) {
     var cell = document.getElementById(cel_id);
 
