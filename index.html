@@ -123,21 +123,21 @@
             
             <h2 class="section-title">Code example</h2>
             <pre class="highlight-pre"><code class="example">
-function validateQuantity(input, cel_id) {
-var cell = document.getElementById(cel_id);
-
-var regex = /[+\-*\/]/;                  
-if (input.charAt(0) === '0' || regex.test(input.charAt(0))) {
-    cell.style.backgroundColor = "yellow";
-    alert("проверь данные")
-} else if (isNaN(input) || !Number.isInteger(parseFloat(input))) {
-    cell.style.backgroundColor = "red";
-    alert("это точно число?")
-} else {
-    cell.style = "none";
-}
-}
-            </code></pre>
+<span class="blueviolet">function</span> <span class="blue">validateQuantity</span><span class="yellow">(</span>input, cel_id<span class="yellow">) {</span>
+    <span class="blueviolet">var</span> cell <span class="lightskyblue">=</span>  document.<span class="blue">getElementById</span><span class="blueviolet">(</span>cel_id<span class="blueviolet">)</span>;
+    
+    <span class="blueviolet">var</span> regex = <span class="lightskyblue">/</span><span class="orange">[+\-*</span><span class="lightskyblue">\/</span><span class="orange">]</span><span class="lightskyblue">/</span>;                  
+    <span class="blueviolet">if (</span>input.<span class="blue">charAt(</span><span class="orange">0</span><span class="blue">)</span> <span class="lightskyblue">===</span> <span class="green">'0'</span> <span class="lightskyblue">||</span> regex.<span class="blue">test(</span>input.<span class="blue">charAt</span><span class="yellow">(</span><span class="orange">0</span><span class="yellow">)</span><span class="blue">)</span><span class="blueviolet">)</span> <span class="blueviolet">{</span>
+        cell.<span class="red">style</span>.<span class="red">backgroundColor</span> <span class="lightskyblue">=</span> <span class="green">"yellow"</span>;
+        <span class="blue">alert(</span><span class="green">"проверь данные"</span><span class="blue">)</span>
+    <span class="blueviolet">} else if (</span><span class="blue">isNaN(</span>input<span class="blue">)</span> <span class="lightskyblue">|| !</span>Number.<span class="blue">isInteger(parseFloat</span><span class="yellow">(</span>input<span class="yellow">)</span><span class="blue">)</span><span class="blueviolet">) {</span>
+        cell.<span class="red">style</span>.<span class="red">backgroundColor</span> <span class="lightskyblue">=</span> <span class="green">"red"</span>;
+        <span class="blue">alert(<span class="green">"это точно число?"</span>)</span>
+    <span class="blueviolet">} else {</span>
+        cell.<span class="red">style</span> <span class="lightskyblue">=</span> <span class="green">"none"</span>;
+    <span class="blueviolet">}</span>
+<span class="yellow">}</span>
+</code></pre>
         </section>
 
         </div>

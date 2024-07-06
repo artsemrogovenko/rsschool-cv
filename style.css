@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    /* горизонтальное центрирование */
+    justify-content: center;
+    /* вертикальное центрирование */
+    align-items: center;
+}
+
+a:link,
+a:visited {
+    color: rgb(1, 19, 106);
+    /* цвет ссылки */
+    text-decoration: none;
+}
+
+.nav-link {
+    transition: 0.3s;
+    list-style: none;
+    padding: 20px;
+    /* вертикальное центрирование */
+    align-items: center;
+}
+
+/* делает в два ряда */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    margin: 10px;
+}
+
+.main-container .profile {
+    align-content: center;
+    justify-items: center;
+    display: grid;
+    grid-row: 3;
+    grid-column: 1;
+    max-width: 400px;
+    /* border: 1px solid #829985;
+    border-radius: 10px; */
+}
+
+.avatar-image {
+    width: 300px;
+    /* высота квадратного контейнера */
+    height: 300px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    /* скрытие выходящих за рамки частей изображения */
+    overflow: hidden;
+
+    /* обрезаем изображение, чтобы оно заполнило контейнер, сохраняя пропорции */
+    object-fit: cover;
+}
+
+.main-container .skills {
+    /* display: flexbox; */
+    flex-wrap: wrap-reverse;
+}
+
+
+
+@media (max-width: 792px) {  
+
+    .header {
+        height: 200%;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+    }
+
+    .nav-link,
+    .main {
+        margin: 10px;
+    }
+}
+
+
+
+h1 {
+   color: #b5bdb5;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 1em;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #829985;
+}
+
+li {
+    font-style: normal;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.highlight-pre {
+    padding: 10px;
+    margin: 2px;
+    align-content: center;
+    justify-items: center;
+    background-color: #282c34;
+}
+
+@font-face {
+    font-family: "Consolas";
+    src: url("assets\\fonts\\consolas.ttf");
+  }
+
+code {
+    font-family: "Consolas",sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    font-style: normal;
+    color:#abb2bf;
+  
+}
+
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+.ul {
+    /* Убирает маркеры списка */
+    list-style-type: none;
+}
+
+
+p,
+a {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+header {
+    height: 60px;
+    /* Устанавливает высоту */
+    background-color: rgb(248, 223, 85);
+    color: white;
+    text-align: center;
+    /* горизонтальное центрирование */
+    justify-content: center;
+    /* вертикальное центрирование */
+    align-items: center;
+}
+
+footer {
+    /* Устанавливает высоту футера в 100 пикселей */
+    height: 100px;
+    text-align: center;
+}
+
+footer img {
+    height: 50px;
+    margin: 50px;
+}
+
+.blueviolet{color:#c678dd ;}
+.blue{color: #61afef;}
+.lightskyblue{color: #4bb6b9;}
+.yellow{color: #ffd710;}
+.orange{color:#d19a66 ;}
+.green{color:#98c379;}
+.red{color:#e06c75;}
