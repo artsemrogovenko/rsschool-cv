@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
@@ -57,12 +56,12 @@
                 </section>
                 <section class="section" id="level">
                     <h2 class="section-title">English level</h2>
-                    <p>A1 Beginnger</p>
+                    <p>A1 Beginner</p>
                 </section>
             </div>
 
             <section class="section" id="skills">
-                <h2 class="section-title">Soft Skills</h2>
+                <h2 class="section-title">Hard Skills</h2>
                 <ul>
                     <li>Basic:
                         <ul>
@@ -74,26 +73,25 @@
                             <li>SQL</li>
                         </ul>
                     </li>
-                    
-                    <li style="margin-top:20px ;">Advanced:
+                    <li class="advanced_skills">Advanced:
                         <ul>
                             <li>Java</li>
                             <li>Spring</li>
                         </ul>
                     </li>
-                </ul>  
+                </ul>
             </section>
             <section class="section" id="education">
-                <h2 class="section-title">Education</h2>   
+                <h2 class="section-title">Education</h2>
                 <div class="education">
                     <p>Gomel State College of Design and Computer Graphics</p>
                     <ul>
                         <li>“Art and design works”</li>
                         <li>“Design (3-dimensional design)”</li>
                     </ul>
-                    <p>Additional completed courses and trainings</p>              
+                    <p>Additional completed courses and trainings</p>
                     <ul>
-                        <li>GeekBrains <ul>
+                        <li>GeekBrains<ul>
                                 <li>Developer - Web development in Java.</li>
                             </ul>
                         </li>
@@ -105,12 +103,16 @@
                                 <li>Burgers Landing Page</li>
                             </ul>
                         </li>
-                        <li>Code-basics <ul>
+                        <li>Code-basics<ul>
                                 <li>JavaScript</li>
                             </ul>
                         </li>
+                        <li>RS School<ul>
+                                <li>JS / Front-end Pre-school RU</li>
+                            </ul>
+                        </li>
                     </ul>
-                </div>  
+                </div>
             </section>
             <section class="section" id="projects">
                 <h2 class="section-title">Projects</h2>
@@ -120,24 +122,22 @@
                     <li><a href="https://github.com/artsemrogovenko/java_toys" target="_blank">Toy slot machine(console)</a></li>
                     <li><a href="https://github.com/artsemrogovenko/notes_py" target="_blank">Notes based of python(console)</a></li>
                 </ul>
-            
+
             <h2 class="section-title">Code example</h2>
-            <pre class="highlight-pre"><code class="example">
-<span class="blueviolet">function</span> <span class="blue">validateQuantity</span><span class="yellow">(</span>input, cel_id<span class="yellow">) {</span>
-    <span class="blueviolet">var</span> cell <span class="lightskyblue">=</span>  document.<span class="blue">getElementById</span><span class="blueviolet">(</span>cel_id<span class="blueviolet">)</span>;
-    
-    <span class="blueviolet">var</span> regex = <span class="lightskyblue">/</span><span class="orange">[+\-*</span><span class="lightskyblue">\/</span><span class="orange">]</span><span class="lightskyblue">/</span>;                  
-    <span class="blueviolet">if (</span>input.<span class="blue">charAt(</span><span class="orange">0</span><span class="blue">)</span> <span class="lightskyblue">===</span> <span class="green">'0'</span> <span class="lightskyblue">||</span> regex.<span class="blue">test(</span>input.<span class="blue">charAt</span><span class="yellow">(</span><span class="orange">0</span><span class="yellow">)</span><span class="blue">)</span><span class="blueviolet">)</span> <span class="blueviolet">{</span>
-        cell.<span class="red">style</span>.<span class="red">backgroundColor</span> <span class="lightskyblue">=</span> <span class="green">"yellow"</span>;
-        <span class="blue">alert(</span><span class="green">"проверь данные"</span><span class="blue">)</span>
-    <span class="blueviolet">} else if (</span><span class="blue">isNaN(</span>input<span class="blue">)</span> <span class="lightskyblue">|| !</span>Number.<span class="blue">isInteger(parseFloat</span><span class="yellow">(</span>input<span class="yellow">)</span><span class="blue">)</span><span class="blueviolet">) {</span>
-        cell.<span class="red">style</span>.<span class="red">backgroundColor</span> <span class="lightskyblue">=</span> <span class="green">"red"</span>;
-        <span class="blue">alert(<span class="green">"это точно число?"</span>)</span>
-    <span class="blueviolet">} else {</span>
-        cell.<span class="red">style</span> <span class="lightskyblue">=</span> <span class="green">"none"</span>;
-    <span class="blueviolet">}</span>
-<span class="yellow">}</span>
-</code></pre>
+            <pre class="highlight-pre">
+    <code class="example"><span class="blueviolet">function</span> <span class="blue">validateQuantity</span><span class="yellow">(</span>input, cel_id<span class="yellow">) {</span>
+        <span class="blueviolet">var</span> cell <span class="lightskyblue">=</span>  document.<span class="blue">getElementById</span><span class="blueviolet">(</span>cel_id<span class="blueviolet">)</span>;
+        <span class="blueviolet">var</span> regex = <span class="lightskyblue">/</span><span class="orange">[+\-*</span><span class="lightskyblue">\/</span><span class="orange">]</span><span class="lightskyblue">/</span>;
+        <span class="blueviolet">if (</span>input.<span class="blue">charAt(</span><span class="orange">0</span><span class="blue">)</span> <span class="lightskyblue">===</span> <span class="green">'0'</span> <span class="lightskyblue">||</span> regex.<span class="blue">test(</span>input.<span class="blue">charAt</span><span class="yellow">(</span><span class="orange">0</span><span class="yellow">)</span><span class="blue">)</span><span class="blueviolet">)</span> <span class="blueviolet">{</span>
+            cell.<span class="red">style</span>.<span class="red">backgroundColor</span> <span class="lightskyblue">=</span> <span class="green">"yellow"</span>;
+            <span class="blue">alert(</span><span class="green">"проверь данные"</span><span class="blue">)</span>
+        <span class="blueviolet">} else if (</span><span class="blue">isNaN(</span>input<span class="blue">)</span> <span class="lightskyblue">|| !</span>Number.<span class="blue">isInteger(parseFloat</span><span class="yellow">(</span>input<span class="yellow">)</span><span class="blue">)</span><span class="blueviolet">) {</span>
+            cell.<span class="red">style</span>.<span class="red">backgroundColor</span> <span class="lightskyblue">=</span> <span class="green">"red"</span>;
+            <span class="blue">alert(<span class="green">"это точно число?"</span>)</span>
+        <span class="blueviolet">} else {</span>
+            cell.<span class="red">style</span> <span class="lightskyblue">=</span> <span class="green">"none"</span>;
+        <span class="blueviolet">}</span>
+        <span class="yellow">}</span></code></pre>
         </section>
 
         </div>
@@ -153,7 +153,7 @@
                 alt="github-logo">
         </a>
         <span>2024</span>
-    </div>
+        </div>
     </footer>
 
 </body>
